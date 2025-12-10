@@ -201,16 +201,13 @@ with torch.no_grad():
 ```
 DL segmentation project/
 │
-├── Medical Imaging Segmentation.ipynb    # Main training & evaluation notebook
+├── Medical Imaging Segmentation.ipynb    # Main training & evaluation notebook (Google Colab)
+├── RSNA base with avg acuracy.ipynb      # Base training notebook (Kaggle)
 ├── README.md                              # Project documentation
-│
-├── rsna_png_256/                          # Dataset directory (local)
-│   ├── images/                            # CT scan images (PNG)
-│   └── masks/                             # Segmentation masks (PNG)
-│
 └── models/                                # Saved model weights
     ├── best_model_512.pth                 # Initial training checkpoint
-    └── best_mobilenet_rsna_refined.pth    # Fine-tuned model
+    ├── best_mobilenet_rsna_refined.pth    # Fine-tuned model (Colab)
+    └── best_mobilenet.pth                 # Base model (Kaggle)
 ```
 
 ## 🔧 Optimizations
